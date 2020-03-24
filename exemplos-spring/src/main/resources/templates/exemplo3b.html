@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Exemplo 3b Spring MVC</title>
+</head>
+<body>
+	<h1>Exemplo 3b Spring MVC</h1>
+	<ul th:each="item : ${itens}">
+		<li>
+			<h5 th:text="${item.texto}"></h5>
+			<p th:if="${item.multi10 == true}">SIM</p>
+			<p th:if="${item.multi10 == false}">NAO</p>
+		</li>
+	</ul>
+</body>
+</html>
